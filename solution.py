@@ -8,4 +8,4 @@ def solution(x: np.array) -> bool:
     import scipy.stats as st
     alpha = 0.02
     t_statistic, p_value = st.ttest_1samp(x, 500, alternative="two-sided")
-    return p_value < 2*alpha and x.mean() > threshold
+    return p_value < 2*alpha and x.mean() > 500
